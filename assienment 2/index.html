@@ -1,19 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>DJI Mavic 4 Pro</title>
 </head>
-
 <body>
+    <!-- Navbar Header -->
     <header>
-        <nav>
-            <a href="./index.html"> <img style="background-color: blueviolet;" src="./Images/icons/helicopter-solid-full.png" alt="logo of app"></a>
-            
+        <nav class="navbar">
+            <div class="logo-box">
+                <div class="icon-wrapper">
+                    <img src="./Images/icons/helicopter-solid-full.png" alt="logo of app">
+                </div>
+                <span class="brand-name">DJI Mavic 4 Pro</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#specifications">Specifications</a>
+                <a href="#customer-reviews">Rating & Reviews</a>
+                <a href="#related-products">Related Products</a>
+            </div>
         </nav>
     </header>
+
+    <!-- Main Content: 4 Middle Sections -->
+    <main>
+        <!-- 1. Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="section-container hero-container">
+                <!-- Left: Drone Image with Discount Badge -->
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-card">
+                        <img src="./Images/hero-img.png" alt="DJI Mavic 4 Pro Drone" class="main-drone-img">
+                        <span class="discount-badge">-12% OFF</span>
+                    </div>
+                </div>
+
+                <!-- Right: Product Information & Purchase Options -->
+                <div class="hero-info">
+                    <div class="product-tags">
+                        <span class="tag">Professional</span>
+                        <span class="tag">In Stock</span>
+                        <span class="tag">Free Shipping</span>
+                    </div>
+
+                    <h1 class="product-title">
+                        DJI Mavic 4 <span class="highlight-purple">Pro</span>
+                    </h1>
+
+                    <p class="product-desc">
+                        Experience unparalleled flight performance with 8K camera capabilities, 40-minute flight time, and advanced AI obstacle avoidance technology. Perfect for professional photographers and content creators.
+                    </p>
+
+                    <div class="pricing-box">
+                        <div class="price-row">
+                            <span class="current-price">$2,499</span>
+                            <span class="original-price">$2,849</span>
+                            <span class="save-badge">Save $350</span>
+                        </div>
+                        <p class="installment-text">Or pay in 4 interest-free payments of $624.75</p>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-primary">
+                            <img src="./Images/icons/cart-shopping-solid-full.png" alt="Cart" class="btn-icon">
+                            Add to Cart - $2,499
+                        </button>
+                        <button class="btn btn-outline">
+                            <img src="./Images/icons/heart-solid-full.png" alt="Wishlist" class="btn-icon">
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Specifications / Key Features Section -->
+        <section id="specifications" class="specs-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Explore the <span class="highlight-purple">Key Features</span></h2>
+                    <p>Powerful technology designed to make every flight extraordinary</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <article class="feature-card">
+                        <div class="feature-icon icon-purple">
+                            <img src="./Images/icons/video-solid-full.png" alt="Video icon">
+                        </div>
+                        <span class="feature-step text-purple">01 / Camera</span>
+                        <h3>8K Cinematic Video</h3>
+                        <p>Capture crisp, detailed footage and professional-quality aerial shots with an advanced high-resolution camera.</p>
+                        <div class="feature-metric">
+                            <span class="metric-number">8K</span>
+                            <span class="metric-label">Video resolution</span>
+                        </div>
+                    </article>
+
+                    <!-- Feature 2 -->
+                    <article class="feature-card">
+                        <div class="feature-icon icon-cyan">
+                            <img src="./Images/icons/camera-solid-full.png" alt="Camera icon">
+                        </div>
+                        <span class="feature-step text-cyan">02 / Photography</span>
+                        <h3>48MP Photos</h3>
+                        <p>Preserve the fine details in landscapes, architecture, and creative projects with high-resolution photography.</p>
+                        <div class="feature-metric">
+                            <span class="metric-number">48MP</span>
+                            <span class="metric-label">Photo resolution</span>
+                        </div>
+                    </article>
+
+                    <!-- Feature 3 -->
+                    <article class="feature-card">
+                        <div class="feature-icon icon-emerald">
+                            <img src="./Images/icons/battery-full-solid-full.png" alt="Battery icon">
+                        </div>
+                        <span class="feature-step text-emerald">03 / Endurance</span>
+                        <h3>Longer Flights</h3>
+                        <p>Spend more time framing the perfect shot with a flight time built for extended creative sessions.</p>
+                        <div class="feature-metric">
+                            <span class="metric-number">40 min</span>
+                            <span class="metric-label">Flight time</span>
+                        </div>
+                    </article>
+
+                    <!-- Feature 4 -->
+                    <article class="feature-card">
+                        <div class="feature-icon icon-orange">
+                            <img src="./Images/icons/satellite-dish-solid-full.png" alt="Satellite icon">
+                        </div>
+                        <span class="feature-step text-orange">04 / Connectivity</span>
+                        <h3>Extended Range</h3>
+                        <p>Explore more of your surroundings while keeping your aerial workflow connected and controlled.</p>
+                        <div class="feature-metric">
+                            <span class="metric-number">10 km</span>
+                            <span class="metric-label">Maximum range</span>
+                        </div>
+                    </article>
+
+                    <!-- Feature 5 -->
+                    <article class="feature-card">
+                        <div class="feature-icon icon-sky">
+                            <img src="./Images/icons/shield-halved-solid-full.png" alt="Safety shield icon">
+                        </div>
+                        <span class="feature-step text-sky">05 / Safety</span>
+                        <h3>360° Obstacle Avoidance</h3>
+                        <p>Smart obstacle sensing helps you fly with more confidence in complex environments.</p>
+                        <div class="feature-metric">
+                            <span class="metric-number">360° AI</span>
+                            <span class="metric-label">Obstacle sensing</span>
+                        </div>
+                    </article>
+
+                    <!-- Feature 6 -->
+                    <article class="feature-card">
+                        <div class="feature-icon icon-rose">
+                            <img src="./Images/icons/gauge-high-solid-full.png" alt="Speedometer icon">
+                        </div>
+                        <span class="feature-step text-rose">06 / Performance</span>
+                        <h3>Built for Speed</h3>
+                        <p>Responsive flight performance helps you follow the action and capture dynamic scenes.</p>
+                        <div class="feature-metric">
+                            <span class="metric-number">68 km/h</span>
+                            <span class="metric-label">Maximum speed</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Creator Call-to-action Banner -->
+                <div class="creator-banner">
+                    <div class="creator-text">
+                        <span class="creator-tag">MADE FOR CREATORS</span>
+                        <h3>Your next perspective starts here.</h3>
+                        <p>Professional imaging, intelligent flight, and reliable performance in one drone.</p>
+                    </div>
+                    <a href="#related-products" class="btn btn-banner">
+                        Explore Accessories
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Ratings & Reviews Section -->
+        <section id="customer-reviews" class="reviews-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>What Our <span class="highlight-purple">Customers Say</span></h2>
+                    <p>Real experiences from professional pilots and creators</p>
+                </div>
+
+                <div class="reviews-layout">
+                    <!-- Left: Reviews Rating Summary -->
+                    <aside class="rating-summary-card">
+                        <div class="summary-score">
+                            <span class="big-score">4.9</span>
+                            <div class="star-rating">
+                                <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon">
+                                <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon">
+                                <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon">
+                                <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon">
+                                <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon">
+                            </div>
+                            <span class="based-on">Based on 2,847 reviews</span>
+                        </div>
+
+                        <!-- Rating Bars -->
+                        <div class="rating-bars">
+                            <div class="bar-row">
+                                <span class="bar-label">5★</span>
+                                <div class="bar-track"><div class="bar-fill" style="width: 78%;"></div></div>
+                                <span class="bar-percent">78%</span>
+                            </div>
+                            <div class="bar-row">
+                                <span class="bar-label">4★</span>
+                                <div class="bar-track"><div class="bar-fill" style="width: 15%;"></div></div>
+                                <span class="bar-percent">15%</span>
+                            </div>
+                            <div class="bar-row">
+                                <span class="bar-label">3★</span>
+                                <div class="bar-track"><div class="bar-fill" style="width: 5%;"></div></div>
+                                <span class="bar-percent">5%</span>
+                            </div>
+                            <div class="bar-row">
+                                <span class="bar-label">2★</span>
+                                <div class="bar-track"><div class="bar-fill" style="width: 1.5%;"></div></div>
+                                <span class="bar-percent">1.5%</span>
+                            </div>
+                            <div class="bar-row">
+                                <span class="bar-label">1★</span>
+                                <div class="bar-track"><div class="bar-fill" style="width: 0.5%;"></div></div>
+                                <span class="bar-percent">0.5%</span>
+                            </div>
+                        </div>
+
+                        <!-- Stats Footer -->
+                        <div class="summary-stats">
+                            <div class="stat-col">
+                                <span class="stat-num">96%</span>
+                                <span class="stat-desc">Would recommend</span>
+                            </div>
+                            <div class="stat-col">
+                                <span class="stat-num">4.8</span>
+                                <span class="stat-desc">Quality rating</span>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Right: Individual Customer Reviews -->
+                    <div class="reviews-list">
+                        <!-- Review 1 -->
+                        <article class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-meta">
+                                    <img src="./Images/avatar-2.jpg" alt="Marcus Chen" class="reviewer-avatar">
+                                    <div>
+                                        <h4>Marcus Chen</h4>
+                                        <p class="reviewer-role">Professional Photographer</p>
+                                        <div class="reviewer-stars">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <span class="rating-num">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-status">
+                                    <span class="verified-badge">Verified Purchase</span>
+                                    <span class="review-date">3 months ago</span>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                "The DJI Mavic 4 Pro has revolutionized my aerial photography work. The 8K video quality is absolutely stunning, and the 40-minute flight time means I can capture entire shoots without battery anxiety. Best investment I've made for my business."
+                            </p>
+                        </article>
+
+                        <!-- Review 2 -->
+                        <article class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-meta">
+                                    <img src="./Images/avatar-3.jpg" alt="Thomas Anderson" class="reviewer-avatar">
+                                    <div>
+                                        <h4>Thomas Anderson</h4>
+                                        <p class="reviewer-role">Real Estate Agent</p>
+                                        <div class="reviewer-stars">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <span class="rating-num">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-status">
+                                    <span class="verified-badge">Verified Purchase</span>
+                                    <span class="review-date">2 months ago</span>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                "As a real estate professional, the DJI Mavic 4 Pro gives me the edge I need. The automated flight modes make it incredibly easy to capture perfect property shots every time. My clients are always impressed with the footage quality."
+                            </p>
+                        </article>
+
+                        <!-- Review 3 -->
+                        <article class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-meta">
+                                    <img src="./Images/avatar-4.jpg" alt="David Rodriguez" class="reviewer-avatar">
+                                    <div>
+                                        <h4>David Rodriguez</h4>
+                                        <p class="reviewer-role">Filmmaker</p>
+                                        <div class="reviewer-stars">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <span class="rating-num">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-status">
+                                    <span class="verified-badge">Verified Purchase</span>
+                                    <span class="review-date">1 month ago</span>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                "The obstacle avoidance system is a game-changer. I can focus entirely on getting the perfect shot without worrying about crashes. The gimbal stabilization is incredibly smooth - my footage looks like it was shot with a professional camera crew."
+                            </p>
+                        </article>
+
+                        <!-- Review 4 -->
+                        <article class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-meta">
+                                    <img src="./Images/avatar-5.jpg" alt="Kyle Johnson" class="reviewer-avatar">
+                                    <div>
+                                        <h4>Kyle Johnson</h4>
+                                        <p class="reviewer-role">Content Creator</p>
+                                        <div class="reviewer-stars">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <img src="./Images/icons/yellow-star-solid-full.png" alt="star" class="star-icon-sm">
+                                            <span class="rating-num">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-status">
+                                    <span class="verified-badge">Verified Purchase</span>
+                                    <span class="review-date">2 weeks ago</span>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                "The mobile app is incredibly intuitive. Even as a beginner, I was able to capture professional-looking footage within hours. The automated modes are perfect for social media content. My followers can't believe the quality!"
+                            </p>
+                        </article>
+
+                        <div class="reviews-btn-wrapper">
+                            <button class="btn btn-secondary">Load More Reviews</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Related Products Section -->
+        <section id="related-products" class="related-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Complete Your <span class="highlight-purple">Setup</span></h2>
+                    <p>Essential accessories and complementary products</p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="./Images/related-products-1.png" alt="Pro Controller" class="product-img">
+                            <span class="badge-tag bg-teal">Accessory</span>
+                        </div>
+                        <h3 class="product-card-title">Pro Controller</h3>
+                        <p class="product-card-desc">Enhanced remote with 7" HD display and extended battery life</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-price">$599</span>
+                            <button class="btn btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="./Images/related-products-2.png" alt="Travel Case" class="product-img">
+                            <span class="badge-tag bg-green">Essential</span>
+                        </div>
+                        <h3 class="product-card-title">Travel Case</h3>
+                        <p class="product-card-desc">Waterproof aluminum case with custom foam inserts for safe transport</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-price">$299</span>
+                            <button class="btn btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="./Images/related-products-3.png" alt="Battery Kit" class="product-img">
+                            <span class="badge-tag bg-cyan">Power</span>
+                        </div>
+                        <h3 class="product-card-title">Battery Kit</h3>
+                        <p class="product-card-desc">3 additional batteries with charging hub for extended flights</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-price">$449</span>
+                            <button class="btn btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="./Images/related-products-4.png" alt="Safety Kit" class="product-img">
+                            <span class="badge-tag bg-orange">Safety</span>
+                        </div>
+                        <h3 class="product-card-title">Safety Kit</h3>
+                        <p class="product-card-desc">Propeller guards and landing gear for enhanced safety and stability</p>
+                        <div class="product-card-footer">
+                            <span class="product-card-price">$129</span>
+                            <button class="btn btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="related-btn-wrapper">
+                    <button class="btn btn-outline-purple">View All Accessories</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                
+                <div class="footer-col col-brand">
+                    <div class="footer-logo">
+                        <div class="footer-icon-wrapper">
+                            <img src="./Images/icons/helicopter-solid-full.png" alt="DJI Logo">
+                        </div>
+                        <span class="footer-brand-name">DJI</span>
+                    </div>
+                    <p class="footer-desc">
+                        Leading the future of aerial technology with innovative drone solutions for professionals and enthusiasts worldwide.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-btn fb">
+                            <img src="./Images/icons/facebook-f-brands-solid-full.png" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-btn tw">
+                            <img src="./Images/icons/twitter-brands-solid-full.png" alt="Twitter">
+                        </a>
+                        <a href="#" class="social-btn ig">
+                            <img src="./Images/icons/instagram-brands-solid-full.png" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-btn yt">
+                            <img src="./Images/icons/youtube-brands-solid-full.png" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">DJI Mavic 4 Pro</a></li>
+                        <li><a href="#">DJI Mini</a></li>
+                        <li><a href="#">DJI Enterprise</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Software</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">User Manual</a></li>
+                        <li><a href="#">Firmware Updates</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Investors</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    © 2025 DJI. All rights reserved. | Privacy Policy | Terms of Service
+                </p>
+                <div class="payment-methods">
+                    <div class="payment-card">
+                        <img src="./Images/paypal.svg" alt="PayPal">
+                    </div>
+                    <div class="payment-card">
+                        <img src="./Images/master-card.svg" alt="Mastercard">
+                    </div>
+                    <div class="payment-card">
+                        <img src="./Images/visa.svg" alt="Visa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
