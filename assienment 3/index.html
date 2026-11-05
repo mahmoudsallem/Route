@@ -5,21 +5,17 @@
     <title>The UX Review Blog</title>
     <link rel="icon" href="./images/icons/star-solid-full.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-    <!-- Meta tags -->
+
     <meta property="og:title" content="The UX Review" />
     <meta property="og:description" content="A blog about UX design and research." />
-    
-    <!-- Local Font: Exo (Preload for instant rendering) -->
+
     <link rel="preload" href="./fonts/exo-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
-    
-    <!-- Stylesheets -->
+
     <link rel="stylesheet" href="./env.css" />
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body class="body">
 
-    <!-- HEADER / NAVBAR -->
     <header id="header" class="site-header">
         <div class="header-container">
             <div class="nav-card">
@@ -30,12 +26,10 @@
                     </a>
                 </div>
 
-                <!-- Mobile Menu Button -->
                 <a href="#mobile-menu" class="menu-toggle" aria-label="Toggle menu">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </a>
 
-                <!-- Desktop Navigation Links -->
                 <nav id="main-nav" class="main-nav">
                     <ul class="nav-links">
                         <li>
@@ -56,14 +50,12 @@
                     </ul>
                 </nav>
 
-                <!-- Desktop CTA Action -->
                 <div id="header-actions" class="header-actions">
                     <a href="#community" class="btn-subscribe">
                         SUBSCRIBE NOW
                     </a>
                 </div>
 
-                <!-- Mobile Menu Drawer (:target pure CSS) -->
                 <div id="mobile-menu" class="mobile-menu-container">
                     <div class="mobile-menu-content">
                         <div class="mobile-menu-inner">
@@ -93,9 +85,8 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
     <section id="hero" class="hero-section">
-        <!-- Floating Abstract Cubes in Background -->
+
         <div class="hero-bg-shapes">
             <div class="cube cube-1"></div>
             <div class="cube cube-2"></div>
@@ -104,7 +95,7 @@
 
         <div class="hero-container">
             <div class="hero-grid">
-                <!-- Hero Left: Copy & Actions -->
+
                 <div class="hero-left">
                     <div class="badge-trending">
                         <span>🔥 TRENDING NOW</span>
@@ -131,7 +122,6 @@
                     </div>
                 </div>
 
-                <!-- Hero Right: Featured Visual Card -->
                 <div class="hero-right">
                     <div class="hero-card hover-lift">
                         <img class="hero-img" src="./images/hero-img.png" alt="abstract brutalist geometric shapes with bold colors, digital art style, high contrast" />
@@ -144,11 +134,10 @@
         </div>
     </section>
 
-    <!-- LATEST ARTICLES SECTION -->
     <section id="latestArticles" class="articles-section">
         <div class="section-container">
             <div class="articles-layout">
-                <!-- Main Articles Column -->
+
                 <div class="articles-main">
                     <div class="articles-header">
                         <h3 class="section-title">LATEST ARTICLES</h3>
@@ -158,7 +147,7 @@
                     </div>
 
                     <div class="articles-list">
-                        <!-- Article 1: Tech -->
+
                         <article class="article-item hover-lift">
                             <div class="article-flex">
                                 <div class="article-thumb-wrap">
@@ -181,7 +170,6 @@
                             </div>
                         </article>
 
-                        <!-- Article 2: Design -->
                         <article class="article-item hover-lift">
                             <div class="article-flex">
                                 <div class="article-thumb-wrap">
@@ -204,7 +192,6 @@
                             </div>
                         </article>
 
-                        <!-- Article 3: Culture -->
                         <article class="article-item hover-lift">
                             <div class="article-flex">
                                 <div class="article-thumb-wrap">
@@ -228,7 +215,6 @@
                         </article>
                     </div>
 
-                    <!-- Load More Button -->
                     <div class="load-more-container">
                         <div class="btn-shadow-wrap">
                             <button class="btn-brutal btn-black btn-load-more">
@@ -238,10 +224,9 @@
                     </div>
                 </div>
 
-                <!-- Sidebar Column -->
                 <aside class="articles-sidebar">
                     <div class="sidebar-sticky">
-                        <!-- Trending Now Box -->
+
                         <div class="sidebar-card">
                             <h4 class="sidebar-title">TRENDING NOW</h4>
                             <div class="trending-list">
@@ -269,7 +254,6 @@
                             </div>
                         </div>
 
-                        <!-- Categories Box -->
                         <div class="sidebar-card">
                             <h4 class="sidebar-title">CATEGORIES</h4>
                             <div class="category-block-list">
@@ -286,9 +270,8 @@
         </div>
     </section>
 
-    <!-- AUTHORS SECTION -->
     <section id="authors" class="authors-section">
-        <!-- Floating Abstract Cubes in Background -->
+
         <div class="authors-bg-shapes">
             <div class="author-cube author-cube-1"></div>
             <div class="author-cube author-cube-2"></div>
@@ -302,7 +285,7 @@
             </div>
 
             <div class="authors-grid">
-                <!-- Author 1: Alex Brutal -->
+
                 <div class="author-box author-yellow hover-lift">
                     <div class="author-avatar-wrap">
                         <img src="./images/avatar-1.jpg" alt="Alex Brutal" class="author-avatar" />
@@ -326,7 +309,6 @@
                     </ul>
                 </div>
 
-                <!-- Author 2: Arnold Reeve -->
                 <div class="author-box author-green hover-lift">
                     <div class="author-avatar-wrap">
                         <img src="./images/avatar-2.jpg" alt="Arnold Reeve" class="author-avatar" />
@@ -350,7 +332,6 @@
                     </ul>
                 </div>
 
-                <!-- Author 3: Mike Edge -->
                 <div class="author-box author-pink hover-lift">
                     <div class="author-avatar-wrap">
                         <img src="./images/avatar-3.jpg" alt="Mike Edge" class="author-avatar" />
@@ -377,7 +358,6 @@
         </div>
     </section>
 
-    <!-- COMMUNITY SECTION -->
     <section id="community" class="community-section">
         <div class="section-container">
             <div class="section-header-center">
@@ -387,7 +367,7 @@
             </div>
 
             <div class="community-grid">
-                <!-- Left: Benefits & CTA -->
+
                 <div class="community-left">
                     <h4 class="community-heading">BECOME PART OF SOMETHING BIGGER</h4>
                     <p class="community-desc-box">
@@ -430,11 +410,10 @@
                     </div>
                 </div>
 
-                <!-- Right: Testimonials Card -->
                 <div class="testimonials-card">
                     <h5 class="testimonials-title">WHAT REBELS ARE SAYING</h5>
                     <div class="testimonials-list">
-                        <!-- Testimonial 1 -->
+
                         <div class="testimonial-item quote-red">
                             <p class="quote-text">
                                 "Finally, a blog that tells it like it is. No corporate BS, just pure truth about what's really happening in tech. This is the wake-up call our industry needed."
@@ -448,7 +427,6 @@
                             </div>
                         </div>
 
-                        <!-- Testimonial 2 -->
                         <div class="testimonial-item quote-blue">
                             <p class="quote-text">
                                 "The UX Review changed how I think about design. It's raw, honest, and exactly what our industry needs. Every article challenges my assumptions."
@@ -462,7 +440,6 @@
                             </div>
                         </div>
 
-                        <!-- Testimonial 3 -->
                         <div class="testimonial-item quote-purple">
                             <p class="quote-text">
                                 "The most authentic voice in digital culture. Every article challenges my assumptions and makes me think differently about the work I do."
@@ -481,11 +458,10 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer id="footer" class="site-footer">
         <div class="footer-container">
             <div class="footer-grid">
-                <!-- Col 1: Brand -->
+
                 <div class="footer-brand-col">
                     <div class="footer-brand-header">
                         <div class="pen-icon-box">
@@ -498,7 +474,6 @@
                     </p>
                 </div>
 
-                <!-- Col 2: Categories -->
                 <div class="footer-col">
                     <h4 class="footer-heading">CATEGORIES</h4>
                     <ul class="footer-nav-list">
@@ -510,7 +485,6 @@
                     </ul>
                 </div>
 
-                <!-- Col 3: Newsletter -->
                 <div class="footer-newsletter-col">
                     <h4 class="footer-heading">NEWSLETTER</h4>
                     <p class="footer-newsletter-desc">
@@ -525,7 +499,6 @@
                 </div>
             </div>
 
-            <!-- Footer Bottom -->
             <div class="footer-bottom">
                 <p class="footer-copyright">
                     © 2025 The UX Review. ALL RIGHTS RESERVED. STAY BRUTAL.
