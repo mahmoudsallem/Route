@@ -25,7 +25,7 @@
       
       <aside
         id="sidebar"
-        class="sidebar fixed right-0 top-0 h-full z-10 flex flex-col shadow-lg transition-all duration-300"
+        class="sidebar fixed right-0 top-0 h-full z-10 d-none d-md-flex flex-column shadow-lg transition-all duration-300"
       >
         <div class="p-3 p-xl-4">
           <div id="logo" class="mb-8">
@@ -161,18 +161,18 @@
 
       <main
         id="main-content"
-        class="flex-1 p-4 md:p-8 overflow-y-auto transition-all duration-300"
+        class="flex-1 p-4 p-md-5 overflow-y-auto transition-all duration-300"
       >
-        <header id="header" class="relative mb-6 md:mb-10">
+        <header id="header" class="relative mb-4 mb-md-5">
           
           <div
             class="absolute inset-0 welcome-bg rounded-2xl"
           ></div>
 
           <div
-            class="relative flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 md:p-6 rounded-2xl border border-gray-100 backdrop-blur-sm shadow-sm gap-4 sm:gap-0"
+            class="relative flex flex-col flex-sm-row justify-between items-start align-items-sm-center p-4 p-md-5 rounded-2xl border border-gray-100 backdrop-blur-sm shadow-sm gap-4 gap-sm-0"
           >
-            <div class="flex items-center gap-3 md:gap-4 w-full sm:w-auto">
+            <div class="flex items-center gap-3 gap-md-4 w-full w-sm-auto">
               
               <div
                 class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl flex items-center justify-center shadow-lg shadow-blue flex-shrink-0"
@@ -192,7 +192,7 @@
               </div>
 
               <div
-                class="hidden sm:flex items-center gap-2 bg-green-50 px-2 md:px-3 py-1 md:py-1.5 rounded-lg border border-green-100"
+                class="d-none d-sm-flex items-center gap-2 bg-green-50 px-2 px-md-3 py-1 py-md-2 rounded-lg border border-green-100"
               >
                 <div
                   class="w-2 h-2 bg-green-500 rounded-full animate-pulse"
@@ -204,10 +204,10 @@
             </div>
 
             <div
-              class="flex items-center gap-2 md:gap-3 w-full sm:w-auto justify-between sm:justify-end"
+              class="flex items-center gap-2 gap-md-3 w-full w-sm-auto justify-between justify-content-sm-end"
             >
               
-              <div class="flex items-center gap-1 md:gap-2">
+              <div class="flex items-center gap-1 gap-md-2">
                 <button
                   class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl transition-all duration-200 group"
                 >
@@ -230,13 +230,13 @@
               </div>
 
               <div
-                class="flex items-center gap-2 md:gap-3 bg-white px-3 md:px-4 py-2 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200"
+                class="flex items-center gap-2 gap-md-3 bg-white px-3 px-md-4 py-2 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200"
               >
-                <div class="text-right hidden sm:block">
+                <div class="text-right d-none d-sm-block">
                   <p class="text-xs md:text-sm font-semibold text-gray-900">
                     سيف أسامة
                   </p>
-                  <p class="text-xs text-gray-500 hidden md:block">حساب مميز</p>
+                  <p class="text-xs text-gray-500 d-none d-md-block">حساب مميز</p>
                 </div>
                 <img
                   src="./images/avatar-2.jpg"
@@ -247,7 +247,7 @@
             </div>
 
             <div
-              class="flex sm:hidden items-center gap-2 bg-green-50 px-3 py-1.5 rounded-lg border border-green-100 w-full justify-center"
+              class="d-flex d-sm-none items-center gap-2 bg-green-50 px-3 py-1.5 rounded-lg border border-green-100 w-full justify-center"
             >
               <div
                 class="w-2 h-2 bg-green-500 rounded-full animate-pulse"
@@ -310,7 +310,7 @@
         >
           <div
             id="notifications-card"
-            class="order-1 bg-white border border-gray-200 p-4 md:p-6 rounded-2xl shadow-sm"
+            class="order-1 bg-white border border-gray-200 p-4 p-md-5 rounded-2xl shadow-sm"
           >
             <div class="flex justify-between items-center mb-6">
               <h3 class="text-base md:text-lg font-semibold text-gray-900">
@@ -378,7 +378,7 @@
 
           <div
             id="transactions-card"
-            class="order-2 order-md-3 order-xl-2 md:row-span-2 md:col-span-2 bg-white border border-gray-200 p-4 md:p-6 rounded-2xl shadow-sm"
+            class="order-2 order-md-3 order-xl-2 md:row-span-2 md:col-span-2 bg-white border border-gray-200 p-4 p-md-5 rounded-2xl shadow-sm"
           >
             <div class="flex justify-between items-center mb-4">
               <h3 class="text-base md:text-lg font-semibold text-gray-900">

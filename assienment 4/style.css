@@ -220,7 +220,9 @@ table {
   right: 0;
 }
 
-[dir="rtl"] #main-content { margin-right: 256px; }
+[dir="rtl"] #main-content { margin-right: 0; }
+@media (min-width: 768px) { [dir="rtl"] #main-content { margin-right: 64px; } }
+@media (min-width: 1200px) { [dir="rtl"] #main-content { margin-right: 256px; } }
 
 .block { display: block; }
 .inline-flex { display: inline-flex; }
@@ -937,7 +939,12 @@ table {
   min-height: 100vh;
 }
 .sidebar {
-  width: 256px;
+  width: 64px;
+}
+@media (min-width: 1200px) {
+  .sidebar { width: 256px; }
+}
+.sidebar-base {
   background-color: var(--color-white-translucent-95);
   border-left: 1px solid var(--color-border-subtle);
   backdrop-filter: blur(8px);
@@ -996,4 +1003,15 @@ table {
   width: 24px;
   height: 16px;
   background-color: rgba(255, 255, 255, 0.4);
+}
+.grid > * { min-width: 0; }
+
+@media (min-width: 1200px) {
+  .order-xl-1 { order: 1 !important; }
+  .order-xl-2 { order: 2 !important; }
+  .order-xl-3 { order: 3 !important; }
+  .order-xl-4 { order: 4 !important; }
+  .order-xl-5 { order: 5 !important; }
+  .order-xl-6 { order: 6 !important; }
+  .order-xl-7 { order: 7 !important; }
 }
